@@ -1,0 +1,1 @@
+web: java -Dstore=memory -Dpromo=false -Dmode=demo -Dport=5555 -jar target/cart-0.0.1-SNAPSHOT.jar
