@@ -14,7 +14,7 @@ import ca.ulaval.glo4002.cart.interfaces.rest.filters.CORSFilter;
 import ca.ulaval.glo4002.cart.interfaces.rest.mappers.PersistenceExceptionMapper;
 
 public class CartServer implements Runnable {
-	private static final int PORT = 7222;
+	private static final Integer PORT = 7222;
 
 	public static void main(String[] args) {
 		new CartServer().run();
@@ -30,7 +30,8 @@ public class CartServer implements Runnable {
     }
 
     private void startServer() {
-        Server server = new Server(PORT);
+    	int port = Integer.parseInt(System.getProperty("port", PORT.toString()));
+        Server server = new Server(port);
         ServletContextHandler contextHandler = new ServletContextHandler(server, "/");
 
         // Configuration manuelle au lieu du package scanning
