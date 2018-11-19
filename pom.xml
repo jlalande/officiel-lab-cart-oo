@@ -7,8 +7,8 @@
 	<version>1.0.1-SNAPSHOT</version>
 
 	<scm>
-		<connection>scm:git:git://github.com:jlalande/officiel-lab-cart-oo.git</connection>
-		<developerConnection>scm:git:git://github.com:jlalande/officiel-lab-cart-oo.git</developerConnection>
+		<connection>scm:git:git@github.com:jlalande/officiel-lab-cart-oo.git</connection>
+		<developerConnection>scm:git:git@github.com:jlalande/officiel-lab-cart-oo.git</developerConnection>
 		<url>https://github.com/jlalande/officiel-lab-cart-oo</url>
 		<tag>HEAD</tag>
 	</scm>
