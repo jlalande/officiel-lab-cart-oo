@@ -1,16 +1,14 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>ca.ulaval.glo4002</groupId>
 	<artifactId>cart</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 
 	<scm>
 		<connection>scm:git:git@github.com:jlalande/officiel-lab-cart-oo.git</connection>
 		<developerConnection>scm:git:git@github.com:jlalande/officiel-lab-cart-oo.git</developerConnection>
 		<url>https://github.com/jlalande/officiel-lab-cart-oo</url>
-		<tag>HEAD</tag>
+		<tag>cart-1.0.1</tag>
 	</scm>
 
 	<properties>
@@ -109,12 +107,10 @@
 						<configuration>
 							<createDependencyReducedPom>false</createDependencyReducedPom>
 							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>ca.ulaval.glo4002.cart.CartServer</mainClass>
 								</transformer>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
 							</transformers>
 						</configuration>
 					</execution>
