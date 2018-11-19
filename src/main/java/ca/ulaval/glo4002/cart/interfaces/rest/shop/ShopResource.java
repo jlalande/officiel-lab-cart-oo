@@ -24,6 +24,7 @@ public class ShopResource {
     @GET
     @Path("/available-items")
     public List<ShopItemDto> listItems() {
+    	System.out.println("Test de logging");
         List<ShopItem> shopItems = shopService.listAvailableItems();
         return shopItemDtoAssembler.toDto(shopItems);
     }
